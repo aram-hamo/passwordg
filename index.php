@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
-	<head>
+    <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta charset="UTF-8">
+        <meta charset="UTF-8">
         <link href=/bootstrap.css rel=stylesheet></link>
         <style>
-			body{
-                padding-left:15%;
-                padding-right:15%;
-                font-size:1.5em;
-			}
+        body{
+            padding-left:15%;
+            padding-right:15%;
+            font-size:1.5em;
+        }
         .submitB{
             height:3em;
             width:100%;
