@@ -3,10 +3,19 @@
 ## Installation
 
 ### Docker
-Building the image
+
+Clone the repo
+
+`git clone https://gitlab.com/aram-hamo/passwordg.git`
+
+cd into the repo
+
+`cd passwordg`
+
+Build the docker image
 
 `docker build -t passwordg .`
 
-Running the docker image
+Run the docker image
 
 `docker run passwordg`

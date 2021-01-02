@@ -6,9 +6,9 @@
         <link href=/bootstrap.css rel=stylesheet></link>
         <style>
         body{
-            padding-left:15%;
-            padding-right:15%;
-            font-size:1.5em;
+            padding-left:10%;
+            padding-right:10%;
+            font-size:1.6em;
         }
         .submitB{
             height:3em;
