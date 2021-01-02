@@ -56,9 +56,26 @@ if(isset($_POST['generate'])){
     if($_POST["specialS"] == "specialS"){
         $command = $command . " -y ";
     }
-    echo '<div>' . shell_exec($command) . '</div>';
+    echo '<textarea  id=password>' . shell_exec($command) . '</textarea>';
 }
-    echo '<br><br><br><br><br><br>';
+//    echo '<br><br><br><br><br><br>';
 ?>
+<br>
+<button class="btn btn-primary" onclick="copyToClipboard()">Copy To The Clipboard</button> 
+
+<script>
+ function copyToClipboard() {
+  /* Get the text field */
+  var copyText = document.getElementById("password");
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+
+} 
+</script>
 	</body>
 </html>
