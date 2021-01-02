@@ -19,19 +19,19 @@
 	</head>
 	<body>
     <form method=post>
-    <input name="capitalize" type="radio" id=capitalize value=capitalize default></input>
+    <input name="capitalize" checked="checked" type="radio" id=capitalize value=capitalize default></input>
     <label for=capitalize class=silver > Include Capitalize chars</label>
     <br>
     <input name="capitalize" type="radio" id=no-capitalize value=no-capitalize></input>
     <label class=silver for=no-capitalize > No Capitalize</label>
     <hr>
-    <input name="numerals" id=numerals type="radio" value=numerals></input>
+    <input name="numerals" id=numerals type="radio" checked="checked" value=numerals></input>
     <label class=silver for=numerals > Include at least one number</label>
     <br>
     <input name="numerals" id=no-numerals type="radio" value=no-numerals></input>
     <label class=silver for=no-numerals> Do not include any number</label>
     <hr>
-    <input name="specialS" id=specialS type="checkbox" value=specialS></input>
+    <input name="specialS" id=specialS type="checkbox" checked="checked" value=specialS></input>
     <label class=silver for=specialS> include symblos</label>
     <hr>
     <input name="generate" class="btn-primary btn submitB" value="Generate"
