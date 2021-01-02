@@ -4,7 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
         <meta name=theme-color content="#007BFF">
-        <link href=/bootstrap.css rel=stylesheet></link>
+        <link href=/bootstrap.css rel=stylesheet />
         <style>
         body{
             padding-left:10%;
@@ -15,30 +15,32 @@
             height:3em;
             width:100%;
         }
+        .password{
+            width:100%;
+        }
         </style>
 	</head>
 	<body>
     <form method=post>
-    <input name="capitalize" checked="checked" type="radio" id=capitalize value=capitalize default></input>
+    <input name="capitalize" checked="checked" type="radio" id=capitalize value=capitalize default />
     <label for=capitalize class=silver > Include Capitalize chars</label>
     <br>
-    <input name="capitalize" type="radio" id=no-capitalize value=no-capitalize></input>
+    <input name="capitalize" type="radio" id=no-capitalize value=no-capitalize />
     <label class=silver for=no-capitalize > No Capitalize</label>
     <hr>
-    <input name="numerals" id=numerals type="radio" checked="checked" value=numerals></input>
+    <input name="numerals" id=numerals type="radio" checked="checked" value=numerals />
     <label class=silver for=numerals > Include at least one number</label>
     <br>
-    <input name="numerals" id=no-numerals type="radio" value=no-numerals></input>
+    <input name="numerals" id=no-numerals type="radio" value=no-numerals />
     <label class=silver for=no-numerals> Do not include any number</label>
     <hr>
-    <input name="specialS" id=specialS type="checkbox" checked="checked" value=specialS></input>
+    <input name="specialS" id=specialS type="checkbox" checked="checked" value=specialS />
     <label class=silver for=specialS> include symblos</label>
     <hr>
     <input name="generate" class="btn-primary btn submitB" value="Generate"
-    type="submit"></input>
+    type="submit" />
     <br>
     <br>
-    </div> 
     </form>
 <?php
 if(isset($_POST['generate'])){
@@ -56,14 +58,16 @@ if(isset($_POST['generate'])){
     if($_POST["specialS"] == "specialS"){
         $command = $command . " -y ";
     }
-    echo '<textarea  id=password>' . shell_exec($command) . '</textarea>';
+    echo '<br><textarea id=password class=password id=password>' . shell_exec($command) . '</textarea>';
+    echo '<br><button class="btn btn-success copyButton" onclick="copyToClipboard()">Copy To The Clipboard</button> ';
 }
-//    echo '<br><br><br><br><br><br>';
+    echo '<br><br><br><br><br><br>';
 ?>
 <br>
-<button class="btn btn-primary" onclick="copyToClipboard()">Copy To The Clipboard</button> 
 
 <script>
+console.log(document.URL);
+console.log(window.location.href);
  function copyToClipboard() {
   /* Get the text field */
   var copyText = document.getElementById("password");
