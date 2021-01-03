@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name=theme-color content="#007BFF">
         <link href=/bootstrap.css rel=stylesheet />
+        <title>passwordG</title>
         <style>
         body{
             padding-left:10%;
@@ -17,6 +18,9 @@
         }
         .password{
             width:100%;
+        }
+        footer{
+            text-align:center;
         }
         </style>
 	</head>
@@ -81,5 +85,9 @@ console.log(window.location.href);
 
 } 
 </script>
+<footer>
+    <img src=/gitlab-icon-rgb.png>
+    <a href=https://gitlab.com/aram-hamo/passwordg target="_blank">Get The Source Code</a>
+</footer>
 	</body>
 </html>
