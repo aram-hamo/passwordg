@@ -86,9 +86,9 @@ console.log(window.location.href);
 
 } 
 </script>
-<footer>
-    <img src=/gitlab-icon-rgb.png>
-    <a href=https://gitlab.com/aram-hamo/passwordg target="_blank">Get The Source Code</a>
-</footer>
+        <footer>
+            <img src=/gitlab-icon-rgb.png>
+            <a href=https://gitlab.com/aram-hamo/passwordg target="_blank">Get The Source Code</a>
+        </footer>
 	</body>
 </html>
