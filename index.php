@@ -66,6 +66,7 @@ if(isset($_POST['generate'])){
     echo '<br><button class="btn btn-success copyButton" onclick="copyToClipboard()">Copy To The Clipboard</button> ';
 }
     echo '<br><br><br><br><br><br>';
+    echo '<script> window.location.href = "/#password"; </script>';
 ?>
 <br>
 
