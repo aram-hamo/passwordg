@@ -38,7 +38,7 @@
     <input name="numerals" id=no-numerals type="radio" value=no-numerals />
     <label class=silver for=no-numerals> Do not include any number</label>
     <hr>
-    <input name="specialS" id=specialS type="checkbox" checked="checked" value=specialS />
+    <input name="specialS" id=specialS type="checkbox" value=specialS />
     <label class=silver for=specialS> include symblos</label>
     <hr>
     <input name="generate" class="btn-primary btn submitB" value="Generate"
