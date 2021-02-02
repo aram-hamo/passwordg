@@ -1,0 +1,7 @@
+FROM alpine
+
+RUN apk update && apk add php apache2 php-apache2 pwgen 
+RUN rm /var/www/localhost/htdocs/index.html
+COPY src/* /var/www/localhost/htdocs/
+
+ENTRYPOINT httpd && tail -f /var/log/apache2/access.log 
