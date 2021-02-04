@@ -14,7 +14,7 @@ cd into the repo
 
 Build the docker image
 
-`docker build -t passwordg .`
+`docker build -t passwordg -f Dockerfile.debian .`
 
 Run the docker image
 
