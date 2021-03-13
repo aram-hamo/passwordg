@@ -71,8 +71,6 @@ if(isset($_POST['generate'])){
 <br>
 
 <script>
-console.log(document.URL);
-console.log(window.location.href);
  function copyToClipboard() {
   /* Get the text field */
   var copyText = document.getElementById("password");
