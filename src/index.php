@@ -4,12 +4,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
         <meta name=theme-color content="#007BFF">
+        <meta name=description content="">
         <link href=/bootstrap.css rel=stylesheet />
         <title>passwordG</title>
         <style>
         body{
-            padding-left:10%;
-            padding-right:10%;
+            padding-left:5%;
+            padding-right:5%;
             font-size:1.6em;
         }
         .submitB{
